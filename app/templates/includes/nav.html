@@ -27,6 +27,9 @@
                 <a class="nav-link" aria-current="page" href="{{url_for('auth.login')}}">Login</a>
             </li>
             {% endif %}
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">React Shop</a>
+            </li>
         </ul>
 
             {% if current_user.is_authenticated %}

@@ -19,7 +19,8 @@ export default class NavBar extends Component {
                         <Nav.Link as={Link} to="/example">Example</Nav.Link>
                         <Nav.Link as={Link} to="/functionalexample">Func Ex</Nav.Link>
                         <Nav.Link as={Link} to="/logout">Logout</Nav.Link>
-                        
+                        <Nav.Link href="/auth/login">Social Media</Nav.Link>
+
                         {this.props.isAdmin?
 
                         <NavDropdown title="Admin Zone" id="navbarScrollingDropdown">

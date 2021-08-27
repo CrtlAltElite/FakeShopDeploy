@@ -12,7 +12,7 @@ import os
 
 stripe.api_key = 'sk_test_51JSVUqLkVcxO568O9o2s5dD4Z63cIUxSIlKzpULmQUxHKut49KkHSQPOdvsuNgIa79OHxjGqTRuWybIrlLVJXgbl00MtaJFEtZ'
 
-YOUR_DOMAIN = 'https://cea67reactstore.herokuapp.com/cart'
+YOUR_DOMAIN = os.environ.get('HOST_ADDRESS')+'/cart'
 @api.route('/create-checkout-session', methods=['POST'])
 def create_checkout_session():
     cart=request.get_json().get('cart')
